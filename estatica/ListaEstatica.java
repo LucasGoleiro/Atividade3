@@ -37,6 +37,13 @@ public class ListaEstatica {
 
 	public void  AdicionaQualquerPosicao(Curso e, int pos){
 		int i;
+		if (pos == 1) {
+			AdicionaInicio(e);
+			tamanho++; 
+		} else if (pos == tamanho + 1) {
+			AdicionaFinal(e);
+			tamanho++; 
+		}
 		if ((tamanho<dados.length)&&(pos<tamanho+1)&&(pos>=0)){
 
 
